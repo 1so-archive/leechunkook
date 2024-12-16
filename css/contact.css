@@ -1,0 +1,14 @@
+.contact{
+    margin-top: 220px;
+    margin-bottom: 250px;
+}
+.contact h1{
+    margin-bottom: 75px;
+}
+.contact-txt p{
+    margin-bottom: 25px;
+}
+.contact-txt .go-link a{
+    color: rgb(113, 173, 241);
+    text-decoration: underline dotted green;
+}
