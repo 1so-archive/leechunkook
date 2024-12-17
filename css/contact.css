@@ -12,3 +12,12 @@
     color: rgb(113, 173, 241);
     text-decoration: underline dotted green;
 }
+@media screen and (max-width: 480px) {
+    .contact h1{
+        font-size: 1.1875rem;
+        margin-bottom: 60px;
+    }
+    .contact-txt{
+        font-size: 1rem;
+    }
+}

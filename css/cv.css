@@ -1,0 +1,25 @@
+.main-content.cv{
+    margin-top: 220px;
+    margin-bottom: 250px;
+}
+.cv-wrap{
+    font-size: 17px;
+    line-height: 24px;
+}
+.cv-wrap .cv-title{
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+.cv-wrap li{
+    margin-bottom: 10px;
+}
+.cv-wrap > div{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .cv-wrap{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
