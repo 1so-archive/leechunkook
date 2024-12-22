@@ -97,7 +97,7 @@ header .mobile-menu a{
     .mo-menu{
         position: absolute;
         top: 10px;
-        right: 50px;
+        right: 1.875rem;
     }
     .inner{
         padding-left: 1.875rem; padding-right: 1.875rem;
