@@ -5,10 +5,11 @@
 .cv-wrap{
     font-size: 17px;
     line-height: 24px;
+    position: relative;
 }
 .cv-wrap .cv-title{
     margin-bottom: 14px;
-    font-weight: 500;
+    font-weight: bold;
 }
 .cv-wrap li{
     margin-bottom: 10px;

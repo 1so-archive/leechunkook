@@ -2,6 +2,9 @@
     margin-top: 220px;
     margin-bottom: 250px;
 }
+.contact-inner{
+    position: relative;
+}
 .contact h1{
     margin-bottom: 75px;
 }
@@ -10,7 +13,7 @@
 }
 .contact-txt .go-link a{
     color: rgb(113, 173, 241);
-    text-decoration: underline dotted green;
+    text-decoration: underline dotted rgb(113, 173, 241);
 }
 @media screen and (max-width: 480px) {
     .contact h1{

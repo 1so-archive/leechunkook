@@ -1,0 +1,11 @@
+.exhibitions .caption-title{
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.exhibitions .grid-item:hover::before {
+    opacity: 1;
+}
+.exhibitions .grid-item:hover .work-img {
+    opacity: 0.2;
+}

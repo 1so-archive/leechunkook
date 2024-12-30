@@ -8,22 +8,39 @@
 .grid-item{
     position: relative;
 }
+.grid-item .work-img{
+    background-color: #fff;
+}
 .grid-item_imglink{
     height: 100%;
     display: flex;
     align-items: center;
 }
+
 .grid-item:hover .work-img{
-    opacity: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
 }
+.grid-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    pointer-events: none;
+  }
 .grid-item:hover .caption-text{
     display: block;
 }
 .caption-text{
     display: none;
     position: absolute;
-    left: 20px; 
     top: 50%; margin-top: -26px;
+    cursor: pointer;
+    padding: 0 20px;
 }
 .caption-type2{
     margin-top: -40px;
@@ -44,9 +61,68 @@
 }
 
 
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup img {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+}
+.popup-close svg{
+    width: 60px;
+}
+.popup-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    z-index: 1100; 
+    opacity: 0.4;
+}
+
+.popup-nav.prev {
+    left: 10px;
+}
+.popup-nav.next {
+    right: 10px;
+}
+.popup-nav:hover {
+    opacity: 1;
+}
+.lightbox-icon-arrow{
+    fill: #fff;
+}
+
 @media (min-width: 0px) and (max-width: 520px) {
     .main-content {
-        margin-top: 150px;
+        margin-top: 130px;
     }
     .work-list-wrapper{
         grid-template-columns: repeat(1, minmax(0, 1fr));
