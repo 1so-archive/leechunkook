@@ -8,9 +8,6 @@
 .grid-item{
     position: relative;
 }
-.grid-item .work-img{
-    background-color: #fff;
-}
 .grid-item_imglink{
     height: 100%;
     display: flex;
@@ -21,17 +18,6 @@
     opacity: 0.5;
     transition: opacity 0.3s ease;
 }
-.grid-item:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0.5;
-    pointer-events: none;
-  }
 .grid-item:hover .caption-text{
     display: block;
 }
@@ -122,7 +108,7 @@
 
 @media (min-width: 0px) and (max-width: 520px) {
     .main-content {
-        margin-top: 130px;
+        margin-top: 200px;
     }
     .work-list-wrapper{
         grid-template-columns: repeat(1, minmax(0, 1fr));
