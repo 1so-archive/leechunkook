@@ -54,10 +54,7 @@ header .mobile-menu a{
     /* font-weight: 500; */
     color: #ccc;
 }
-.open-menu:hover, .mo-menu .close-menu:hover{
-    /* color: rgb(113, 173, 241); */
-    color: #8b4e08;
-}
+
 .mo-menu .close-menu{
     display: none;
     margin-bottom: 5px;
@@ -93,13 +90,10 @@ header .mobile-menu a{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.mobile-menu li a:hover{
-    /* color: rgb(113, 173, 241); */
-    color: #8b4e08;
-}
+
 
 .main-content{
-    margin-top: 250px;
+    margin-top: calc(11rem + 55px);
     margin-bottom: 200px;
     background-color: #fff;
 }
@@ -127,12 +121,10 @@ header .mobile-menu a{
     pointer-events: none; 
 }
 
-/* 페이드아웃 상태 */
 .page-transition.hidden {
     opacity: 0; 
     pointer-events: none; 
 }
-/* 페이드인 상태 */
 .page-transition.visible {
     opacity: 1; 
     pointer-events: all;
@@ -178,5 +170,10 @@ header .mobile-menu a{
     }
     .open-menu, .close-menu, header .mobile-menu a{
         font-size: 1.1875rem;
+    }
+}
+@media (min-width: 521px) and (max-width: 767px){
+    header{
+        margin: 4.5rem 0;
     }
 }

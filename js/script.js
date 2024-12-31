@@ -61,3 +61,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('.background-video');
+
+    video.addEventListener('loadedmetadata', () => {
+        video.playbackRate = 0.5;
+    });
+
+    video.addEventListener('ended', function () {
+        video.style.opacity = 0;
+        video.currentTime = 0;
+        video.play();
+        setTimeout(() => {
+            video.style.opacity = 1;
+        }, 100);
+    });
+});
