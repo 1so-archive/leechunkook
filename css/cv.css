@@ -19,7 +19,7 @@
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
     .cv-wrap{
         font-size: 12px;
         line-height: 20px;

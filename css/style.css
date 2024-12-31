@@ -106,6 +106,9 @@ header .mobile-menu a{
     z-index: 100;
     position: absolute;
 }
+.footer p{
+    font-size: 16px;
+}
 
 /* 페이드 전환 효과 */
 .page-transition {
@@ -170,6 +173,9 @@ header .mobile-menu a{
     }
     .open-menu, .close-menu, header .mobile-menu a{
         font-size: 1.1875rem;
+    }
+    .footer p{
+        font-size: 12px;
     }
 }
 @media (min-width: 521px) and (max-width: 767px){
